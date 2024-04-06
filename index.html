@@ -6,12 +6,14 @@
     <title>Portfolio</title>
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Preahvihear&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <!-- reset css -->
     <link rel="stylesheet" href="./css/reset.css">
     <!-- style css -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- component css -->
+    <link rel="stylesheet" href="./css/component.css">
 </head>
 <body>
     <!-- header and nav -->
@@ -21,15 +23,15 @@
             <ul class="menu-nav margin-section">
                 <!-- an icon about you -->
                 <a href="#section1">
-                    <img src="./assets/imgs/paws.png" alt="" width="32px" height="32px"></a>
-                <!-- stydy timeline -->
-                <li><a href="./index.html">Timeline</a></li>
+                    <img src="./assets/imgs/paws.png" alt="" width="32px" height="32px"
+                    style="background: white;border-radius: 50%;
+                    padding: 5px"></a>
                 <!-- your lab -->
-                <li><a href="#section3">Lab</a></li>
-                <!-- your ability -->
-                <li><a href="#section2">Study</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <!-- your lab -->
+                <li><a href="#sectlab">Lab</a></li>
                 <!-- your contact -->
-                <li><a href="#section4">Contact me</a></li>
+                <li><a href="#sectcontact">Contact me</a></li>
             </ul>
         </nav>
     </header>
@@ -40,18 +42,22 @@
     <!-- section first  -->
     <!--  a short introduction about yourself -->
     <section class="my-story margin-section">
-        <img src="./assets//imgs/avatar.jpg" alt="" class="img-avatar">
-        <h1>Hello, I am an back-end engineer.</h1>
-        <p>Hold on a moment! Who exactly is this Back-End developer we're talking about?</p>
-        <p>Well, this is the coding sorcerer who weaves the intricate threads of logic, structure, 
-            and data behind the scenes, making sure everything runs smoothly. But wait, there's more!</p>
-            
+        <p class="short-one">Hello, I am Camelias Bui.</p>
+        <div class="detail-story">
+            <img src="./assets//imgs/avatar.jpg" alt="" class="img-avatar">
+            <div class="details">
+                <p>Hold on a moment! Who exactly is me who call myself <p class="job">Back-End developer</p>?</p>
+                <p>Well, this is the coding sorcerer who weaves the intricate threads of logic, structure, 
+                and data behind the scenes, making sure everything runs smoothly. But wait, there's more!</p>
+            </div>
+        </div>
+          
     </section>
     <!-- section two -->
     <!-- a short about your lab -->
-    <section class="labs">
-        <div class="one">
-            <img src="./assets/imgs/landing-page.png" alt="">
+    <section class="labs margin-section" id="sectlab">
+        <div class="one one-other">
+            <img src="./assets/imgs/landing-page.png" alt="" height="240px">
             <div class="infor-details">
                 <p class="title">An reponsive Website</p>
                 <p class="author">Number of memeber: Me</p>
@@ -59,53 +65,59 @@
                     With high demand, it suits with every deivice and a signup or login system for users on a website. 
                     The login/signup project is important because many organizations’ websites have an authentication layer embedded in them.
                 </p>
-                <p class="detail-tech">
-                    <ul>
-                        <li>Font-end: HTML, CSS, Javascript</li>
-                        <li>Back-end: NodeJs</li>
-                        <li>Full project: <a href="https://github.com/nhatnguyet-dev/JSBasic/tree/main/landingpage_travel">Link Github</a></li>
-                        <li><a href="https://nhatnguyet-dev.github.io/JSBasic/landingpage_travel/">You can try it now!</a></li>
-                    </ul>
-                </p>
+                <ul class="detail-tech">
+                    <li>Font-end: HTML, CSS, Javascript</li>
+                    <li>Back-end: NodeJs</li>
+                    <li>Full project: <a href="https://github.com/nhatnguyet-dev/JSBasic/tree/main/landingpage_travel">Link Github</a></li>
+                    <li><a href="https://nhatnguyet-dev.github.io/JSBasic/landingpage_travel/">You can try it now!</a></li>
+                </ul>
             </div>
         </div>
         <!-- use one css, js with two type of div.lab, just change the infor -->
-        <div class="one">
+        <div class="one one-other">
             <div class="infor-details">
-                <p class="title">a To-Do App</p>
+                <p class="title">A To-Do App</p>
                 <p class="author">Number of memeber: Me</p>
                 <p class="decripstion">An full website helps people to buy comestic online and safty.
                     With high demand, it suits with every deivice and use the hightest technology.
                     Building a to-do app as a project will test your ability as a developer,
                      especially regarding your  skills.
                 </p>
-                <p class="detail-tech">
-                    <ul>
-                        <li>Font-end: HTML, CSS, Javascript</li>
-                        <li>Back-end: Django, PostgreSQL</li>
-                        <li>Full project: <a href="https://github.com/nhatnguyet-dev/JSBasic/tree/main/landingpage_travel">Link Github</a></li>
-                        <li><a href="https://nhatnguyet-dev.github.io/JSBasic/landingpage_travel/">You can try it now!</a></li>
-                    </ul>
-                </p>
+                <ul class="detail-tech">
+                    <li>Font-end: HTML, CSS, Javascript</li>
+                    <li>Back-end: NodeJs</li>
+                    <li>Full project: <a href="https://github.com/nhatnguyet-dev/JSBasic/tree/main/landingpage_travel">Link Github</a></li>
+                    <li><a href="https://nhatnguyet-dev.github.io/JSBasic/landingpage_travel/">You can try it now!</a></li>
+                </ul>
             </div>
-            <img src="./assets/imgs/to-do-app.jpeg" alt="">
+            <img src="./assets/imgs/to-do-app-removebg-preview.png" alt="" >
         </div>
     </section>
     <!-- section with a short story about my study, recommend just a slide of picture -->
-    <section class="study">
 
-    </section>
-    <!-- section of my certificate -->
-    <section class="certificate">
-
-    </section>
-    <!-- contact section -->
-    <section class="contact">
-
+    <!-- section of my certificate --> 
+    <section class=" margin-section">
+        <h2 class="certificate_h2">Certificate</h2>
+        <div class="certificate">
+            <img src="./assets/imgs/landing-page.png" alt="" class="pic1">
+            <img src="./assets/imgs/landing-page.png" alt="" class="pic2">
+            <img src="./assets/imgs/landing-page.png" alt="" class="pic3">
+            <img src="./assets/imgs/landing-page.png" alt="" class="pic4">
+        </div>
     </section>
     <!-- footer afterall -->
-    <footer class="the-end margin-section">
-
+    <footer class="the-end margin-section" id="sectcontact">
+        <h2>Contact with me</h2>
+        <div class="contact-detail">
+            <p>I'm currently looking to join a cross-functional team that values improving people's lives
+                through accessible design. or have a project in mind? Let's connect.</p>
+            <p class="email">nhatnguyet.cam.freelancer@gmail.com</p>
+            <ul class="media-social"> 
+                <li><a href="#linkind" class="social"><img src="./assets//imgs/linkedin.png" alt=""  ></a></li>
+                <li><a href="#gmail" class="social"><img src="./assets/imgs/mail.png" alt="" width="50px"></a></li>
+                <li><a href="#phonenumber" class="social"><img src="./assets/imgs/phone-call.png" alt="" width="50px"></a></li>
+            </ul>
+        </div>
     </footer>
     <script src="./js/app.js"></script>
 </body>
